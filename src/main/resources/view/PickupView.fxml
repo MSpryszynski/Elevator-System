@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import com.sun.javafx.scene.control.IntegerField?>
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.avsystem.gui.controllers.PickupViewController"
+            prefHeight="700.0" prefWidth="800.0">
+
+    <Label fx:id="directionLabel" style="-fx-font: 24 arial" GridPane.rowIndex="0" minWidth="300" alignment="CENTER"/>
+    <Label fx:id="currentFloorLabel" style="-fx-font: 24 arial" GridPane.rowIndex="1" minWidth="300" alignment="CENTER"/>
+    <VBox alignment="CENTER" spacing="10" GridPane.rowIndex="2">
+        <!--Checkbox to debug javafx IntegerField which cannot be updated-->
+        <CheckBox mouseTransparent="true"/>
+        <Label text="Target floor:" />
+        <IntegerField fx:id="targetFloorField" maxWidth="100"/>
+        <Button onAction="#addTargetFloor" text="Add target floor" />
+        <Button onAction="#close" text="Close" />
+    </VBox>
+    <padding><Insets left="240" top="100" /></padding>
+</GridPane>

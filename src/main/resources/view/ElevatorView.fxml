@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="CENTER" prefHeight="700.0" prefWidth="800.0" vgap="10" hgap="10"
+          xmlns="http://javafx.com/javafx/11.0.14-internal"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.avsystem.gui.controllers.ElevatorViewController">
+    <VBox alignment="BASELINE_CENTER" spacing="10" GridPane.rowIndex="0" GridPane.columnIndex="1">
+        <Button mnemonicParsing="false" onAction="#simulateStep" text="SimulateStep"/>
+    </VBox>
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="1">
+        <GridPane fx:id="systemGrid" alignment="CENTER" prefHeight="600.0" prefWidth="600.0" vgap="2" hgap="2">
+        </GridPane>
+    </VBox>
+</GridPane>
